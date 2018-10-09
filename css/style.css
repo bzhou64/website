@@ -1028,7 +1028,8 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff; }
+  background-color: #fff; 
+}
 
 input, button, select, textarea {
   font-family: inherit;
@@ -5236,13 +5237,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 0;
-  background: #fff;
+  font-size: 10px;
+  border: transparent;
+  background: transparent;
+}
+
+.rdt-shadow {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  font-size: 10px;
-  border: transparent; }
+}
 
 #bear-header > .navbar li a {
   text-transform: uppercase;
@@ -5346,6 +5356,19 @@ h1, h2, h3, h4, h5, h6 {
   #bear-header .navbar-header #bear-brand-long-text {
     display: none;
   }
+}
+
+#bear-home {
+  background-image: url("../images/gratisography.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bear-home .container {
+  padding-top: 100px;
 }
 
 #bear-hero, .bear-bg-section {
@@ -5538,13 +5561,15 @@ pre {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;  
+}
 .bear-nav-toggle.active i::before, .bear-nav-toggle.active i::after {
   background: #000; }
 .bear-nav-toggle:hover, .bear-nav-toggle:focus, .bear-nav-toggle:active {
   outline: none;
   border-bottom: none !important; }
 .bear-nav-toggle i {
+  margin-top: 30px;
   position: relative;
   display: -moz-inline-stack;
   display: inline-block;
@@ -5614,8 +5639,9 @@ pre {
   border-bottom: none !important; }
 @media screen and (max-width: 1068px) {
   .bear-nav-toggle {
-    display: block; } 
+    display: block; 
   }
+}
 
 #bear-features {
   padding: 5em 0;
@@ -5956,8 +5982,45 @@ pre {
   font-weight: 100;
   font-family: "Roboto", arial, sans-serif; }
 
-.js .to-animate {
-  opacity: 0; }
+.to-animate {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 
 .mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -6017,3 +6080,23 @@ a > img.bear-align-center {
   margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */
+
+::-webkit-scrollbar{
+  width:3px;
+  height:3px;
+  position:absolute
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow:inset 0 0 0 transparent;
+  -webkit-border-radius:0;
+  border-radius:0
+}
+::-webkit-scrollbar-thumb{
+  -webkit-border-radius:0;
+  border-radius:0;
+  background:#000;
+  -webkit-box-shadow:inset 0 0 0 transparent
+}
+::-webkit-scrollbar-thumb:window-inactive{
+  background:#000
+}

@@ -26,6 +26,36 @@
 		});
 	};
 
+	var menuTransform = function() {
+		var header = $('#bear-header');
+		$(window).resize(function(){
+			var width = $(window).width();
+			if ( width < 1068) {
+				header.css({
+					"background" : "#fff"
+				});
+			} else {
+				header.css({
+					"background" : "transparent"
+				});
+			}
+		})
+
+		$(window).scroll(function(){
+			var scrlTop = $(this).scrollTop();
+			if ( scrlTop > 300 ) {
+				header.css({
+					"background" : "#fff"
+				}).addClass('rdt-shadow');
+			} else {
+				header.css({
+					"background" : "transparent"
+				}).removeClass('rdt-shadow')
+			}
+		})
+	};
+
+
 	var owlCrouselFeatureSlide = function() {
 		
 		var owl = $('.owl-carousel');
@@ -200,6 +230,7 @@
 	$(function(){
 		
 		burgerMenu();
+		menuTransform();
 		owlCrouselFeatureSlide();
 		magnifPopup();
 
