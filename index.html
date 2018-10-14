@@ -59,84 +59,107 @@
 					<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-bear-nav-toggle bear-nav-toggle" data-toggle="collapse" data-target="#bear-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<div class="bear-brand">
-						<a class="bear-brand-logo" href="index.html"><img src="images/logo_trimmed_93.png" id="bear-brand-logo">
-							<span class="bear-brand-text" id="bear-brand-short-text"> UBC &mdash; BEAR</span>
-							<span class="bear-brand-text" id="bear-brand-long-text">  UBC &mdash; Bionics Engineering Analysis and Research</span>
-						</a>
+						<span class="bear-brand-text">
+							<a class="bear-brand-logo" href="index.html"><img src="images/logo_trimmed_93.png" id="bear-brand-logo"></a>
+							<!--
+								<span id="bear-brand-short-text"> UBC &mdash; BEAR</span>
+								<span id="bear-brand-long-text">  UBC &mdash; Bionics Engineering Analysis and Research</span>
+							-->
+						</span>			
 					</div>
 				</div>
 				<div id="bear-navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html"><span>About<span class="border"></span></span></a></li>
-						<li><a href="#"><span>Vision<span class="border"></span></span></a></li>
-						<li><a href="#"><span>Sponsors<span class="border"></span></span></a></li>
-						<li><a href="#"><span>Pilot Project<span class="border"></span></span></a></li>
-						<li><a href="#"><span>Team<span class="border"></span></span></a></li>
-						<li><a href="#"><span>Apply Now<span class="border"></span></span></a></li>
+						<li><a href="#" data-nav-section="about"><span>About<span class="border"></span></span></a></li>
+						<li><a href="#" data-nav-section="vision"><span>Vision<span class="border"></span></span></a></li>
+						<li><a href="#" data-nav-section="sponsors"><span>Sponsors<span class="border"></span></span></a></li>
+						<li><a href="projects.html"><span>Pilot Project<span class="border"></span></span></a></li>
+						<li><a href="team.html"><span>Team<span class="border"></span></span></a></li>
+						<li><a href="apply.html"><span>Apply Now<span class="border"></span></span></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<!-- END .header -->
-	
-	<div id="bear-home">
+	<!-- END .header -->		
+
+	<div class="bear-home" id="bear-home">
+		<div class="bear-spacer bear-spacer-xxlg"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="bear-owl-text-wrap">
-						<div class="text-center">
+				<div class="col-md-10 col-sm-12 col-md-offset-1">
+					<div class="bear-home-hero-wrap">
+						<div class="bear-home-hero-intro text-center" id="bear-home-hero">
 							<h1 class="bear-lead">Welcome to BEAR</h1>
-							<h2 class="bear-sub-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+							<h3 class="bear-sub-lead">
+								Bionics Engineering Analysis and Research
+							</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="bear-spacer bear-spacer-lg"></div>		
+	<!-- END .home -->
 	
-	<div id="bear-about">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-8 col-md-offset-2">
-					<h2 class="bear-section-lead">About</h2>
-				</div>
-				<div class="bear-spacer bear-spacer-xxs"></div>
+	<div id="bear-about" data-section="about">
+		<div class="bear-spacer bear-spacer-lg"></div>
+		<h2 class="bear-section-lead text-center">About</h2>
+		<div class="bear-spacer bear-spacer-xs"></div>
+		<div class="bear-row container figure-right">
+			<div class="bear-col-figure animate-box" style="background-image: url(images/placeholder_bionichand_iphone.jpg)"></div>
+			<div class="bear-col-desc">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-			</div>	
+			</div>
+		</div>
+	</div>
+	<!-- END .about -->
+
+	<div class="bear-spacer"></div>
+
+	<div id="bear-vision" data-section="vision">
+		<div class="bear-spacer bear-spacer-lg"></div>
+		<h2 class="bear-section-lead text-center">Vision</h2>
+		<div class="bear-spacer bear-spacer-xs"></div>
+		<div class="bear-row container">
+			<div class="bear-col-figure animate-box" style="background-image: url(images/placeholder_vision.jpg)"></div>
+			<div class="bear-col-desc">
+				<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	<!-- END .vision -->
+	
+	<div class="bear-spacer"></div>
+
+	<div id="bear-sponsors" data-section="sponsors">
+		<div class="bear-spacer bear-spacer-lg"></div>
+		<h2 class="bear-section-lead text-center">Supporting Organizations</h2>
+		<div class="bear-spacer bear-spacer-xs"></div>
+		<div class="row">
+			<div class="bear-sponsor-gold animate-box" alt="Bionics Network" id="bionics-network"></div>
+			<div class="bear-sponsor-gold animate-box" alt="School of Biomedical Engineering" id="biomedical-engineering"></div>
+			<div class="bear-sponsor-silver animate-box" alt="MiSUMi" id="misumi"></div>
+			<div class="bear-sponsor-bronze animate-box" alt="Kernel" id="kernel"></div>
+			<div class="bear-sponsor-bronze animate-box" alt="Bionik Laboratories Corp." id="bionik"></div>
 		</div>
 	</div>
 
-	<div class="bear-spacer bear-spacer-lg"></div>
-
-	<div id="bear-vision">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-8 col-md-offset-2">
-					<h2 class="bear-section-lead">Vision</h2>
-				</div>
-				<div class="bear-spacer bear-spacer-xxs"></div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>	
-		</div>
-	</div>
-
-	<div class="bear-spacer bear-spacer-lg"></div>
+	
 
 	<footer id="bear-footer">
 		<div class="container text-center">
-			<div class="row">
-				<div class="col-md-12 col-sm-6">
+			<div class="bear-row">
+				<div class="col-md-10 col-md-offset-1 text-center">
 					<div class="bear-footer-widget">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -144,17 +167,17 @@
 					</div>
 					<div class="bear-footer-widget">
 						<ul class="bear-social">
+							<li><a href="mailto:@bearubc@gmail.com"><i class="icon-email"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
-			<div class="row bear-row-padded bear-copyright">
-				<div class="col-md-12 col-sm-6">
+			
+			<div class="bear-row bear-copyright">
+				<div class="col-md-10 col-md-offset-1 text-center">
 					<p>
 						<small>
 							&copy; BEAR UBC. All Rights Reserved. 
@@ -165,7 +188,6 @@
 				</div>
 			</div>
 		</div>
-
 	</footer>
 
 
