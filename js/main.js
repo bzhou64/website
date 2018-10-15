@@ -47,7 +47,7 @@
 
 	var getTopVal = function(width) {
 		var val = 0;
-		if (width <= 768) {
+		if (width <= 855) {
 			val = 65;
 		} else if (width <= 600) {
 			val = 60;
@@ -81,7 +81,7 @@
 
 		$(window).resize(function(){
 			var width = $(window).width();
-			if ( width <= 768) {
+			if ( width <= 855) {
 				header.css({
 					"background" : "#fff"
 				});
@@ -101,7 +101,7 @@
 
 		$(window).scroll(function(){
 			var scrlTop = $(this).scrollTop();
-			if ( scrlTop > 300 || $(window).width() <= 768) {
+			if ( scrlTop > 300 || $(window).width() <= 855) {
 				header.css({
 					"background" : "#fff"
 				}).addClass('rdt-shadow');
@@ -245,17 +245,9 @@
 	var featureIconsWayPoint = function() {
 		if ( $('#bear-features').length > 0 ) {
 			$('#bear-features').waypoint( function( direction ) {
-										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
-					
-					
-					
-
 					setTimeout(animateFeatureIcons, 200);
-					
-					
 					$(this).addClass('animated');
-						
 				}
 			} , { offset: '80%' } );
 		}
@@ -263,17 +255,9 @@
 	var productsWayPoint = function() {
 		if ( $('#bear-products').length > 0 ) {
 			$('#bear-products').waypoint( function( direction ) {
-										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
-					
-					
-					
-
 					setTimeout(animateProducts, 200);
-					
-					
 					$(this).addClass('animated');
-						
 				}
 			} , { offset: '80%' } );
 		}
@@ -282,37 +266,24 @@
 	var clientsWayPoint = function() {
 		if ( $('#bear-products').length > 0 ) {
 			$('#bear-products').waypoint( function( direction ) {
-										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 					setTimeout(animateClientLogo, 200);
-
 					$(this).addClass('animated');
-						
 				}
 			} , { offset: '80%' } );
 		}
 	};
-
 	
-
-	
-	$(function(){
-		
+	$(function(){	
 		burgerMenu();
 		clickMenu();
 		sectionNav();
 		menuTransform();
 		owlCrouselFeatureSlide();
 		magnifPopup();
-
 		animateBox();
-
 		featureIconsWayPoint();
 		productsWayPoint();
 		clientsWayPoint();
-		
-
 	});
-
-
 }());
