@@ -86,7 +86,7 @@
 					"background" : "#fff"
 				});
 				navbar.css({
-					"color" : "#FBB040"
+					"color" : "#1A3199"
 				});
 	
 			} else {
@@ -106,7 +106,7 @@
 					"background" : "#fff"
 				}).addClass('rdt-shadow');
 				navbar.css({
-					"color" : "#FBB040"
+					"color" : "#1A3199"
 				});
 				
 			} else {
