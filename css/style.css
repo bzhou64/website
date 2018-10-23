@@ -82,7 +82,7 @@ b, strong {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
-  min-height: 200px;
+  min-height: auto;
 }
 
 .card-title {
@@ -5720,7 +5720,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bear-sponsors .row {
-  min-height: 800px;
+  min-height: 250px;
   width: 100%;
 }
 
@@ -5738,7 +5738,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 #bear-sponsors .bear-sponsor-silver {
   float: left;
   position: relative;
@@ -5752,7 +5751,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 80px;
   }
 }
-
 
 #bear-sponsors .bear-sponsor-bronze {
   float: left;
@@ -6389,14 +6387,15 @@ pre {
   }
 }
 
-.bear-row .bear-row-desc,
-.bear-row .bear-row-figure {
-
-}
-
 .bear-row .bear-col-desc, 
 .bear-row .bear-col-figure {
   width: 50%;
+}
+
+.bear-row .bear-col-figure {
+  border: red 1px dashed;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 855px) {
@@ -6409,7 +6408,7 @@ pre {
 
 .bear-row .bear-col-desc {
   background: #fff;
-  padding: 4em;
+  padding-left: 15px;
   font-size: 15px;
   line-height: 36px;
 }
@@ -6734,10 +6733,16 @@ a > img.bear-align-center {
   list-style: none;
   float: left;
   margin-left: -25px;
-  width: 100px;
+  width: 130px;
   height: 50px;
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #years li {
+    width: 110px;
+  }
 }
 
 #years a {
@@ -6795,6 +6800,7 @@ a > img.bear-align-center {
 
 #grad_left,
 #grad_right {
+  color: #1A3199;
   width: 100px;
   height: 200px;
   top: 0;
@@ -6808,6 +6814,12 @@ a > img.bear-align-center {
   text-decoration: none;
   border-radius: 50%;
   opacity: 0.3;
+}
+
+#grad_left a:hover, #grad_right a:hover
+#grad_left a:focus, #grad_right a:focus {
+  color: #1A3199;
+  opacity: 1.0;
 }
 
 #grad_left {
