@@ -95,6 +95,10 @@ b, strong {
   margin-bottom: 0;
 }
 
+.card-text {
+  height: 120px;
+}
+
 .card-text:last-child {
   margin-bottom: 0;
 }
