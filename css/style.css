@@ -5639,11 +5639,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bear-home {
-  min-height: 864px;
+  height: 864px;
+}
+
+@media screen and (max-width: 1068px) {
+  .bear-home {
+    height: 600px;
+  }
 }
 
 #bear-home {
-  background-image: url("../images/ve_fra.RGB_color.jpg");
+  /*background-image: url("../images/ve_fra.RGB_color.jpg");*/
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -5691,7 +5697,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bear-home .bear-home-hero-wrap .bear-home-hero-intro .bear-lead, #bear-home-hero .bear-home-hero-wrap .bear-home-hero-intro .bear-sub-lead, #bear-home-hero .bear-sub-lead, .bear-bg-section .bear-home-hero-wrap .bear-home-hero-intro .bear-lead, .bear-bg-section .bear-home-hero-wrap .bear-home-hero-intro .bear-sub-lead {
-  color: #FFF5EE;
+  color: #1A3199;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -5699,6 +5705,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .bear-home .bear-lead {
   font-size: 3em;
+}
+
+#bear-video {
+  z-index: -100;
+}
+
+#bear-video-content {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #bear-spacer-img1 {
@@ -5720,12 +5739,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bear-vision {
+  background-color: #fff;
   min-height: 800px;
+}
+
+#bear-sponsors {
+  z-index: 1;
 }
 
 #bear-sponsors .row {
   min-height: 250px;
   width: 100%;
+  right: 0;
+  background: #fff;
 }
 
 #bear-sponsors .bear-sponsor-gold {
@@ -5734,6 +5760,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: 300px;
   width: 50%;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 855px) {
@@ -5748,6 +5775,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: 200px;
   width: 100%;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 855px) {
@@ -5762,6 +5790,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: 200px;
   width: 50%;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 855px) {
