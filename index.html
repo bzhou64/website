@@ -84,23 +84,36 @@
 	<!-- END .header -->		
 
 	<div class="bear-home" id="bear-home">
-		<div class="bear-spacer bear-spacer-xxlg"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-sm-12 col-md-offset-1">
-					<div class="bear-home-hero-wrap">
-						<div class="bear-home-hero-intro text-center" id="bear-home-hero">
-							<h1 class="bear-lead">Welcome to BEAR</h1>
-							<h3 class="bear-sub-lead">
-								Bionics Engineering Analysis and Research
-							</h3>
-						</div>
-					</div>
-				</div>
+		<video autoplay muted loop pre-load="auto" id="bear-video" style="width:100%; z-index: -1;">
+			<source src="videos/The Mind-Controlled Bionic Arm With a Sense of Touch.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="bear-spacer bear-spacer-lg"></div>
+		<div class="bear-home-hero-wrap" id="bear-video-content">
+			<div class="bear-home-hero-intro text-center" id="bear-home-hero">
+				<h1 class="bear-lead">Welcome to BEAR</h1>
+				<h3 class="bear-sub-lead">
+					Bionics Engineering Analysis and Research
+				</h3>
 			</div>
 		</div>
 	</div>
 	<!-- END .home -->
+
+	<div class="bear-spacer"></div>
+	<div id="bear-sponsors" data-section="sponsors">
+		<div class="bear-spacer bear-spacer-lg"></div>
+		<h2 class="bear-section-lead text-center">Supporting Organizations</h2>
+		<div class="bear-spacer bear-spacer-xs"></div>
+		<div class="row">
+			<div class="bear-sponsor-gold animate-box" alt="Bionics Network" id="bionics-network"></div>
+			<div class="bear-sponsor-gold animate-box" alt="School of Biomedical Engineering" id="biomedical-engineering"></div>
+			<div class="bear-sponsor-silver animate-box" alt="MiSUMi" id="misumi"></div>
+			<div class="bear-sponsor-bronze animate-box" alt="Kernel" id="kernel"></div>
+			<div class="bear-sponsor-bronze animate-box" alt="Bionik Laboratories Corp." id="bionik"></div>
+		</div>
+	</div>
+	<!-- END .sponsors -->
 	
 	<div id="bear-about" data-section="about">
 		<div class="bear-spacer bear-spacer-lg"></div>
@@ -123,21 +136,6 @@
 		</div>
 	</div>
 	<!-- END .about -->
-
-	<div class="bear-spacer"></div>
-	<div id="bear-sponsors" data-section="sponsors">
-		<div class="bear-spacer bear-spacer-lg"></div>
-		<h2 class="bear-section-lead text-center">Supporting Organizations</h2>
-		<div class="bear-spacer bear-spacer-xs"></div>
-		<div class="row">
-			<div class="bear-sponsor-gold animate-box" alt="Bionics Network" id="bionics-network"></div>
-			<div class="bear-sponsor-gold animate-box" alt="School of Biomedical Engineering" id="biomedical-engineering"></div>
-			<div class="bear-sponsor-silver animate-box" alt="MiSUMi" id="misumi"></div>
-			<div class="bear-sponsor-bronze animate-box" alt="Kernel" id="kernel"></div>
-			<div class="bear-sponsor-bronze animate-box" alt="Bionik Laboratories Corp." id="bionik"></div>
-		</div>
-	</div>
-	<!-- END .sponsors -->
 
 	<div class="bear-spacer"></div>
 	<div id="bear-vision" data-section="vision">
