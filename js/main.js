@@ -83,7 +83,8 @@
 			var width = $(window).width();
 			if ( width <= 855) {
 				header.css({
-					"background" : "#fff"
+					"background" : "#fff",
+					"-webkit-box-shadow" : "inset 0px 100px 0px 0px rgba(119, 119, 119, 0)"
 				});
 				navbar.css({
 					"color" : "#1A3199"
@@ -91,7 +92,8 @@
 	
 			} else {
 				header.css({
-					"background" : "transparent"
+					"background" : "transparent",
+					"-webkit-box-shadow" : "inset 0px 100px 0px 0px rgba(119, 119, 119, 0.4)"
 				});
 				navbar.css({
 					"color" : "#000"
@@ -103,16 +105,18 @@
 			var scrlTop = $(this).scrollTop();
 			if ( scrlTop > 300 || $(window).width() <= 855) {
 				header.css({
-					"background" : "#fff"
-				}).addClass('rdt-shadow');
+					"background" : "#fff",
+					"-webkit-box-shadow" : "inset 0px 100px 0px 0px rgba(119, 119, 119, 0)"
+				}).addClass('rdt-transition');
 				navbar.css({
 					"color" : "#1A3199"
 				});
 				
 			} else {
 				header.css({
-					"background" : "transparent"
-				}).removeClass('rdt-shadow');
+					"background" : "transparent",
+					"-webkit-box-shadow" : "inset 0px 100px 0px 0px rgba(119, 119, 119, 0.4)"
+				}).removeClass('rdt-transition');
 				navbar.css({
 					"color" : "#FFF5EE"
 				});
