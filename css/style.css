@@ -5676,7 +5676,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bear-home {
-  /*background-image: url("../images/ve_fra.RGB_color.jpg");*/
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -5690,7 +5689,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bear-home-project {
-  background-image: url("../images/smart_cities_bionic-hands.jpg");
+  background-image: url("../images/ve_fra.RGB_color.jpg");
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
