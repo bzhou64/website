@@ -178,6 +178,10 @@ b, strong {
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
+.team-leads-img {
+  height: 500px;
+}
+
 .card-img-bottom {
   width: 100%;
   border-bottom-right-radius: calc(0.25rem - 1px);
