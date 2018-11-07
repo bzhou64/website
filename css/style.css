@@ -12,7 +12,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Maison Neue", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -1303,14 +1303,6 @@ td, th {
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent; }
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #333333;
-  background-color: #fff; 
-}
 
 input, button, select, textarea {
   font-family: inherit;
@@ -5471,11 +5463,11 @@ button.close {
     display: none !important; } }
 /* Template Style =========== */
 body {
-  font-family: "Roboto", arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 26px;
-  color: #818892; }
+  color: #1A3199;
+}
 
 a {
   -webkit-transition: 0.5s;
@@ -5489,7 +5481,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1A3199;
-  font-family: "Montserrat", arial, sans-serif; }
+  font-family: "Montserrat", arial, sans-serif;
+  font-weight: 400;
+}
 
 ::-webkit-selection {
   color: #818892;
@@ -5554,7 +5548,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #bear-header > .navbar li a {
   text-transform: uppercase;  
-  font-weight: normal;
+  font-weight: medium;
   font-family: "Montserrat", arial, sans-serif;
   font-size: 13px;
   margin-top: 15px;
@@ -5640,33 +5634,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #bear-header .navbar-header .bear-brand {
   float: left;
-}
-
-#bear-header .navbar-header .bear-brand-text {
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: #6b3f19;
-}
-
-#bear-header .navbar-header #bear-brand-short-text {
-  display: none;
-  color: #483C32;
-}
-
-#bear-header .navbar-header #bear-brand-long-text {
-  padding-left: 100px;
-  color: #2B1B17;
-}
-
-@media screen and (max-width: 1440px) {
-  #bear-header .navbar-header #bear-brand-short-text {
-    font-size: 20px;
-    display: inherit;
-    padding-left: 1vw;
-  }
-  #bear-header .navbar-header #bear-brand-long-text {
-    display: none;
-  }
 }
 
 .bear-home {
@@ -5909,8 +5876,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.bear-home .bear-lead {
+.bear-lead {
   font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bear-sub-lead {
+  font-family: 'Open Sans', sans-serif;
 }
 
 #bear-video {
@@ -6531,10 +6503,10 @@ pre {
   text-transform: uppercase;
   margin-bottom: 20px; }
 #bear-footer .bear-footer-logo {
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 50px;
   letter-spacing: 2px;
-  color: #ccc; }
+}
 #bear-footer ul {
   padding: 0;
   margin: 0; }
@@ -6909,16 +6881,16 @@ pre {
   padding: 0;
   font-weight: 100; }
 .owl-carousel-fullwidth .item .bear-owl-text .bear-lead {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Montserrat", arial, sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 .owl-carousel-fullwidth .item .bear-owl-text .bear-sub-lead {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 42px;
-  font-weight: 100;
-  font-family: "Roboto", arial, sans-serif; }
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif; }
 
 .to-animate {
   animation: fadein 1s;
