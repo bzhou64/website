@@ -5678,8 +5678,6 @@ h1, h2, h3, h4, h5, h6 {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
-  min-height: 800px;
-  z-index: 1;
 }
 
 /* Blur + Gray Scale */
@@ -5706,15 +5704,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grasp-text {
-  z-index: 0;
-  font-size: 5vh;
+  font-size: 3vw;
   background-color: #fff;
   font-weight: bold;
   position: absolute;
+  margin: 0;
+  line-height: 1.5;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  margin: 0 auto;
   padding: 15px;
   mix-blend-mode: screen;
 
@@ -5726,7 +5724,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-  font-size: 3vw;
+  .grasp-text {
+    font-size: 5vw;
+  }
 }
 
 .grasp-img {
@@ -5749,7 +5749,7 @@ h1, h2, h3, h4, h5, h6 {
   color: transparent;
 }
 
-#grasp-img1:hover {
+#grasp-img1 {
   background-image: url("../images/Open-Bionics-Dyson-Award_Dezeen_784.jpg");
 }
 
@@ -6844,7 +6844,7 @@ pre {
   border: 2px solid transparent; }
 
 .owl-carousel-fullwidth .item, .owl-carousel-fullwidth .bear-owl-text-wrap {
-  height: 800px;
+  height: 600px;
   display: table;
   width: 100%; }
 .owl-carousel-fullwidth .item {
