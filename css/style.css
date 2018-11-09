@@ -7156,3 +7156,24 @@ a > img.bear-align-center {
   right: 0;
   margin-left: 150px;
 }
+
+.bear-social li a {
+  border-radius: 50%;
+}
+
+#facebook-icon:hover {
+  background-color: #3B5998;
+}
+
+#instagram-icon:hover {
+  background-color: #fb3958;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#googleplus-icon:hover {
+  background-color: #dd4b39;
+}
+
+#linkedin-icon:hover {
+  background-color: #04669A;
+}
