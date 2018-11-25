@@ -58,7 +58,7 @@ b, strong {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  
   border-radius: 0.25rem;
 }
 
@@ -6052,13 +6052,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#bear-team {
+  background-color: #eee;
+}
+
 .bear-team-member {
   height: 500px;
   width: 400px;
 }
 
-.captain {
-  
+.captain { 
   border: red 1px dashed;
   position: absolute;
   right: 0px;
