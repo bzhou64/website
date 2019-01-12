@@ -69,7 +69,7 @@ b, strong {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .card > hr {
@@ -179,7 +179,7 @@ b, strong {
 }
 
 .team-leads-img {
-  height: 500px;
+  /* height: 500px; */
 }
 
 .card-img-bottom {
