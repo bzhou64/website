@@ -5637,12 +5637,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bear-home {
-  height: 864px;
+  height: 600px;
 }
 
 @media screen and (max-width: 1068px) {
   .bear-home {
-    height: 600px;
+    height: 350px;
   }
 }
 
@@ -5837,7 +5837,7 @@ h1, h2, h3, h4, h5, h6 {
   /*background-color: #251147 /*#eee*/
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 40%;
   left: 50%;
   mix-blend-mode: screen;
   padding: 20px;
@@ -6607,7 +6607,7 @@ pre {
     height: 35px; } }
   
 .bear-spacer-lg {
-  height: 100px; }
+  height: 50px; }
 @media screen and (max-width: 855px) {
   .bear-spacer-lg {
     height: 50px; } }
@@ -7186,7 +7186,7 @@ a > img.bear-align-center {
 @media screen and (min-width: 801px) {
  .bear-lead,
  .bear-sub-lead{
-  padding-top:10px;
+  top:25%;
   font-family: 'Merriweather', serif;
   color: white;
   }
@@ -7196,7 +7196,7 @@ a > img.bear-align-center {
 @media screen and (max-width: 800px) {
   .bear-lead,
   .bear-sub-lead, .bear-wrap  {
- top:32%;
+ top:42%;
  font-family: 'Merriweather', serif;
  color: white; 
  opacity:0.9;
