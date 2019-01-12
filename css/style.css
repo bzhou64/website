@@ -5834,7 +5834,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bear-wrap {
-  background-color: #eee;
+  /*background-color: #251147 /*#eee*/
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -5843,6 +5843,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   width: auto;
   margin-top: 100px;
+
   
   /* Shadow effect*/
   -webkit-box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3), 0 0 32px rgba(0, 0, 0, 0.1) inset;
@@ -5879,6 +5880,7 @@ h1, h2, h3, h4, h5, h6 {
 .bear-lead {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
+
 }
 
 .bear-sub-lead {
@@ -7179,4 +7181,25 @@ a > img.bear-align-center {
 
 #icon_link123:hover {
   background-color: #04669A;
+}
+
+@media screen and (min-width: 801px) {
+ .bear-lead,
+ .bear-sub-lead{
+  padding-top:10px;
+  font-family: 'Merriweather', serif;
+  color: white;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 800px) {
+  .bear-lead,
+  .bear-sub-lead, .bear-wrap  {
+ top:32%;
+ font-family: 'Merriweather', serif;
+ color: white; 
+ opacity:0.9;
+
+  }
 }
